@@ -22,7 +22,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: gray;
 }
 
 .main {
@@ -44,6 +43,10 @@ body {
 
 .title, .logo {
     padding: 3em 3em 3em 0;
+}
+
+.logo img {
+    max-width: 150px;
 }
 
 @media (max-width: 767px) {

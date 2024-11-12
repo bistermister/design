@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 ol, ul {
     padding-left: 1.5em;
 }
@@ -47,6 +56,10 @@ body {
 
 .logo img {
     max-width: 150px;
+}
+
+.me-image {
+    max-width: 300px;
 }
 
 @media (max-width: 767px) {

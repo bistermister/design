@@ -6547,7 +6547,8 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-html, body {
+html,
+body {
   background-color: #fff;
   height: 100%;
   margin: 0;
@@ -6569,12 +6570,18 @@ html, body {
   border: 0 none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
 @media (max-width: 767px) {
-  .title, .logo {
+  .title,
+  .logo {
     padding: 1em 1em 1em 0;
   }
   .title {

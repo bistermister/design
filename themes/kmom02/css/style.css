@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Arsenal&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,6 +309,16 @@ template {
   display: none;
 }
 
+/* color palette */
+.logo img {
+  max-width: 150px;
+}
+
+.me-image {
+  max-width: 300px;
+  border-radius: 5%;
+}
+
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -341,6 +352,85 @@ pre code {
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #ce0041;
+  height: 20vh;
+  color: #fefefe;
+  padding: 10px;
+  border-top: 8px solid #113476;
+  margin-top: auto;
+}
+
+footer .social {
+  font-size: 2rem;
+}
+
+footer .social a {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  border-bottom: 8px solid #ec0024;
+  height: 20vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #113476;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #99824c;
+  text-decoration: underline;
+}
+
+.title-font {
+  font-family: Arsenal, sans-serif;
+  font-size: 2em;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.title {
+  text-align: left;
 }
 
 /*!
@@ -6457,8 +6547,10 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-body {
-  background-color: #3d5a80;
+html, body {
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
 }
 
 * {
@@ -6466,6 +6558,41 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0 none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .title, .logo {
+    padding: 1em 1em 1em 0;
+  }
+  .title {
+    min-width: 50%;
+  }
+  .logo {
+    max-width: 30%;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Gör så att den fyller hela höjden av webbläsaren */
+}
+
+.main {
+  flex: 1;
+  width: 75vh;
+  padding: 20px;
+  margin: 0 auto;
 }

@@ -1,8 +1,12 @@
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-
+@import 'images';
 @import 'blockquotes';
 @import 'code';
+@import 'footer';
+@import 'header';
+@import 'navbar';
+@import 'links';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -10,10 +14,13 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Arsenal&display=swap');
 
-body {
+
+html, body {
     background-color: $background-color;
+    height: 100%;
+    margin: 0;
 }
 
 * {
@@ -21,6 +28,43 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Gör så att den fyller hela höjden av webbläsaren */
+  }
+
+.main {
+  flex: 1;
+  width: 75vh;
+  padding: 20px;
+  margin: 0 auto;
+}  
+

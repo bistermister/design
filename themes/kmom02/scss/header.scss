@@ -1,0 +1,13 @@
+/* Header */
+
+// .header, .site-header {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+//     justify-content: space-between;
+// }
+
+.header {
+    border-bottom: 8px solid $red-color;
+    height: 20vh;
+}

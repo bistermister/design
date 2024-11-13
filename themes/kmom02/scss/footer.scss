@@ -1,0 +1,24 @@
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $magenta-color;
+    height: 20vh;
+    color: $whitish-color;
+    padding: 10px;
+    border-top: 8px solid $blue-color;
+    margin-top: auto; 
+  }
+
+
+footer .social {
+    font-size: 2rem;
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+
